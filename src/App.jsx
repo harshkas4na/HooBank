@@ -1,7 +1,7 @@
 import styles from './styles'
 import {Navbar,Hero,Stats,Business,Billing,CardDeal,CTA,Testimonials,Clients,Footer} from '../src/components'
 
-const App=()=>{
+const App=()=>(
   <div className='bg-primary w-full overflow-hidden'>
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
@@ -35,7 +35,7 @@ const App=()=>{
   </div>
 
 
-}
+)
 
 
 export default App;
