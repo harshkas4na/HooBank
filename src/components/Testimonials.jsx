@@ -5,7 +5,7 @@ import FeedbackCard from "./FeedbackCard"
 
 const Testimonials = () => {
   return (
-    <section className={`${styles.paddingX} flex flex-row `}>
+    <section className={`${styles.paddingX} flex flex-col `}>
       <div className='w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1]'>
         <h2 className={styles.heading2}>What people are <br className='sm:block hidden'/> saying about us</h2>
         <div className='w-full md:mt-0 mt-6'>
@@ -13,9 +13,9 @@ const Testimonials = () => {
         </div>
       </div>
 
-      <div className='flex flex-row flex-wrap sm:justify-start justify-center w-full feedback-conatiner relative z-[1]'>
+      <div className='flex sm:flex-row flex-col  items-center justify-center w-full feedback-conatiner relative z-[1] '>
             {feedback.map((card)=>(
-              <FeedbackCard key={card.id} {...Uint8ClampedArray}/>
+              <FeedbackCard key={card.id} {...card}/>
             ))}
       </div>
 
