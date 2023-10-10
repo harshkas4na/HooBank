@@ -14,7 +14,7 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import google from "./google.svg";
 import apple from "./apple.svg";
-import arrowUp from "./arrow-up.svg";
+import arrowUp from "./arrowUp.svg";
 import discount from "./Discount.svg";
 import facebook from "./facebook.svg";
 import instagram from "./instagram.svg";

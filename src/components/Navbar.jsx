@@ -28,10 +28,10 @@ const Navbar = () => {
         <div className='sm:hidden flex felx-1 justify-end items-center'>
             <img src={toggle?close:menu} alt='menu' className='w-[28px] h-[28px] object-contain cursor-pointer' onClick={()=>setToggle((prev)=>!prev) }/>
 
-            <div className={`${toggle ? 'flex' : 'hidden'} bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar `}>
+            <div className={`${toggle ? 'flex' : 'hidden'} bg-black-gradient absolute top-20 z-10 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar `}>
                 <ul className='list-none flex flex-col  justify-end items-center flex-1'>
               {navLinks.map((nav,index)=>(
-                    <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px] text-white ${index===navLinks.length-1? 'mr-0': "mb-5"}`}>
+                    <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px] text-white ${index===navLinks.length-1? 'mr-0': "mb-6"}`}>
                       <a href={`#${nav.id}`}>
                         {nav.title}
                       </a>
